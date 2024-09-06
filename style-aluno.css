@@ -5,6 +5,10 @@ body {
     background-color: #eba937;
     display: flex;
     flex-direction: column;
+    background-image: url(background3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Barra Lateral */
