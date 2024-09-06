@@ -171,3 +171,32 @@ nav ul li a {
     font-size: 14px;
     color: #666;
 }
+
+/* Botão de rolagem para o topo */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000; /* Garante que o botão fique por cima dos outros elementos */
+}
+
+.scroll-to-top.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-to-top.hide {
+    opacity: 0;
+    transform: translateY(10px);
+}
