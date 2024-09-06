@@ -21,7 +21,7 @@
                 <li><a href="#">Material de Apoio</a></li>
                 <li><a href="#">Certificados</a></li>
                 <li><a href="#">Configurações de Conta</a></li>
-                <li><a href="#">Sair</a></li>
+                <li><a href="login.html">Sair</a></li>
             </ul>
         </nav>
     </div>
@@ -32,18 +32,20 @@
         <div class="header">
             <img src="logo.png" alt="Logo MetaBee" class="logo">
             <div class="search-bar">
-                <input type="text" placeholder="Pesquisar Cursos...">
+                <input type="text" id="search-input" placeholder="Pesquisar Cursos...">
             </div>
             <div class="welcome-message">
                 <h1>Bem-vindo, Aluno!</h1>
             </div>
         </div>
 
-        <div class="cursos">
+        <div id="container-cursos" class="container-cursos">
             <!-- lista de cursos disponíveis -->
         </div>
     </div>
 
     <script src="script_aluno.js"></script>
+    <script src="cursos-programacao.js"></script>
+    <script src="cursos.js"></script>
 </body>
 </html>

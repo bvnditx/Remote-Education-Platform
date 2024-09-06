@@ -84,11 +84,13 @@ nav ul li a {
     background-color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     padding: 10px 0;
     position: relative;
     border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow:2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Logo */
@@ -104,13 +106,16 @@ nav ul li a {
     display: flex;
     justify-content: center;
     flex: 1;
+    align-items: center;
 }
 
 .search-bar input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 20px;
-    width: 350px;
+    width: 100%;
+    max-width: 400px;
+
 }
 
 .welcome-message {
@@ -119,4 +124,46 @@ nav ul li a {
 
 .welcome-message h1 {
     margin: 20px;
+}
+
+/* Exibição dos Cursos */
+
+.container-cursos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: wrap;
+    justify-content: left;
+}
+
+.curso {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+}
+
+.curso:hover {
+    transform: translateY(-10px); /* movimenta a caixa ao passar o mouse */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.curso img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.curso h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.curso p {
+    font-size: 14px;
+    color: #666;
 }
