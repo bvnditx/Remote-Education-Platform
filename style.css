@@ -61,3 +61,13 @@ button{
 button:hover {
     background-color: #45a049;
 }
+
+footer {
+    background-color: #F5F7F8; /* Cor de fundo do rodapé */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 0; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    position: absolute; /* Posiciona o rodapé */
+    bottom: 0; /* Alinha ao fundo da página */
+    font-size: 0.9rem; /* Tamanho da fonte */
+}
